@@ -1,0 +1,133 @@
+/* gradient to make things feel like unicorns */
+.unicorn-gradient {
+    background: linear-gradient(153deg, rgba(216,180,226,1) 0%, rgba(253,251,253,1) 40%, rgba(254,253,254,1) 68%, rgba(168,218,220,1) 100%);
+}
+
+/* gradient to make things shine like metal */
+.bronze-gradient {
+    background: linear-gradient(153deg, rgba(93,62,31,1) 0%, rgba(199,147,96,1) 40%, rgba(224,189,154,1) 64%, rgba(99,62,25,1) 100%);
+}
+
+/* Header bronze, font and size gonna be changed */
+h1 {
+    font-family: "Great Vibes", cursive; 
+    font-size: 48px;
+    background: linear-gradient(153deg, rgba(93,62,31,1) 0%, rgba(199,147,96,1) 40%, rgba(224,189,154,1) 64%, rgba(99,62,25,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* box-shadow: -1px 2px 36px 5px rgba(166,124,82,1); */
+}
+
+/* subheaders blue */
+h2 {
+    font-family: "Monomaniac One", sans-serif;
+    color: #1C4D63;
+}
+
+/* top part of the page */
+header {
+    text-align: center;
+    padding: 1rem;
+    /* height: 10vw;  muuta tähän korkeutta */
+    width: 100%;
+}
+
+.header-box {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* profile picture */
+.profile-picture {
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    background-color: #8e24aa;
+}
+
+/* Just main */
+main {
+    padding: 20vw;
+    padding-top: 0vw;
+    padding-bottom: 5vw;
+    gap: 50px;
+    align-items: center;
+
+}
+
+/* middle section of the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* sectionbox for every section */
+.sectionbox {
+    /* width: 60vw; */
+    padding: 1vw;
+    border: solid lightcoral 1px;
+    margin: 5vw;
+}
+
+.to-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* section contents for organizing things */
+.section-contents {
+    margin: 1vw;
+    padding: 5vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: -3px 10px 86px -3px rgba(163,80,163,0.24);
+}
+
+/* own project box to every project */
+.project-box {
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: -3px 10px 86px -47px rgba(163,80,163,0.74);
+}
+
+/* bottom of the page, yes it's a footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Styles to mabile device, screen max 767px */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    /* lisää tänne projektiboxit allekkain sit kun teet ne */
+    main {
+        padding: 10px;
+    }
+
+    .to-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-box {
+        width: 90%;
+    }
+}
