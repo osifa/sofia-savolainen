@@ -1,12 +1,16 @@
 /* gradient to make things feel like unicorns */
 .unicorn-gradient {
-    background: linear-gradient(153deg, rgba(216,180,226,1) 0%, rgba(253,251,253,1) 40%, rgba(254,253,254,1) 68%, rgba(168,218,220,1) 100%);
+    /* background: linear-gradient(153deg, rgba(216,180,226,1) 0%, rgba(253,251,253,1) 40%, rgba(254,253,254,1) 68%, rgba(168,218,220,1) 100%); */
+    background: rgb(216,180,226);
+    background: linear-gradient(108deg, rgba(216,180,226,1) 8%, rgba(4,24,52,1) 39%);
 }
-
 /* gradient to make things shine like metal */
 .bronze-gradient {
     background: linear-gradient(153deg, rgba(93,62,31,1) 0%, rgba(199,147,96,1) 40%, rgba(224,189,154,1) 64%, rgba(99,62,25,1) 100%);
 }
+
+
+
 
 /**
  * Styles for fonts
@@ -25,24 +29,27 @@ h1 {
 /* subheaders blue */
 h2 {
     font-family: "Monomaniac One", sans-serif;
-    color: #1C4D63;
+    /* color: #1C4D63; */
+    color: #fafafa;
 }
 
 h3 {
     font-family: "Monomaniac One", sans-serif;
     color: #1C4D63;
+    /* color: #fafafa; */
 }
+
+.white {
+    color: #fafafa;
+}
+
 
 /**
  * Styles for header
  */
-
-
-/* top part of the page */
 header {
     text-align: center;
-    padding: 1rem;
-    /* height: 10vw;  muuta tähän korkeutta */
+    padding: 10px;
     width: 100%;
 }
 
@@ -56,36 +63,32 @@ header {
 
 /* profile picture */
 .profile-picture {
-    height: 150px;
-    width: 150px;
-    border-radius: 150px;
-    background-color: #8e24aa;
+    background-image: url(/images/Sofia_color_bw.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    margin-top: 50px;
 }
 
 
 main {
-    padding: 10vw;
-    padding-top: 0vw;
-    padding-bottom: 5vw;
+    width: 100%;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     gap: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-/* middle section of the page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
-    color: #333;
-}
-
-/* sectionbox for every section */
-.sectionbox {
-    /* width: 60vw; */
-    padding: 1vw;
-    /* border: solid lightcoral 1px; */ 
-    margin: 5vw;
+    width: 100%;
 }
 
 .to-row {
@@ -93,14 +96,6 @@ body {
     flex-direction: row;
 }
 
-/* section contents for organizing things */
-.section-contents {
-    margin: 1vw;
-    padding: 5vw;
-    border: 1px solid black;
-    border-radius: 16px;
-    box-shadow: -3px 10px 86px -3px rgba(163,80,163,0.24);
-}
 
 
 /**
@@ -109,27 +104,37 @@ body {
 
 /* own project box to every project */
 .project-box {
-    width: 480px;
-    /* margin: 20px; */
+    width: 450px;
+    margin: 10px;
     padding: 20px;
-    border: 1px solid black;
+    gap: 5px;
+    border: 5px solid rgb(182, 154, 154);
+    background: white;
     border-radius: 16px;
     box-shadow: -3px 10px 86px -47px rgba(163,80,163,0.74);
-    /* display: flex;
-    justify-content: space-between; */
+}
+
+.wide {
+    width: 750px;
+}
+
+.height {
+    height: 650px;
 }
 
 .wrap {
     display: flex;
+    width: 1040px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .project-picture {
     width: 200px; 
     height: 250px;
     border: 1px solid black;
-    background-color: aquamarine;
+    background-color: rgb(139, 219, 192);
+    margin: 10px;
 }
 
 
@@ -148,8 +153,18 @@ footer {
 
 /* Styles to mobile device, screen max 767px */
 @media (max-width: 767px) {
+    main {
+        gap: 20px;
+    }
+
     h1 {
         font-size: 3rem;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
     }
 
     .container {
@@ -171,12 +186,20 @@ footer {
     }
 
     .project-box {
-        width: 220px;
+        width: 260px;
         align-items: center;
     }
 
     .project-picture {
         width: 125px;
-        height: 175px;
+        height: 150px;
+    }
+
+    .wrap {
+        width: 90%;
+    }
+
+    .height {
+        height: 700px;
     }
 }
