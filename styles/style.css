@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mina:wght@400;700&family=Monomaniac+One&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mina:wght@400;700&family=Monomaniac+One&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Style+Script&display=swap');
 
 /* gradient to make things feel like unicorns */
 .unicorn-gradient {
@@ -26,23 +26,34 @@ html {
 /* Header bronze, font and size gonna be changed */
 h1 {
     font-family: "Great Vibes", cursive; 
-    font-size: 48px;
+    font-size: 80px;
     background: linear-gradient(153deg, rgba(93,62,31,1) 0%, rgba(199,147,96,1) 40%, rgba(224,189,154,1) 64%, rgba(99,62,25,1) 100%);
     -webkit-background-clip: text;
     color: transparent;
-    /* box-shadow: -1px 2px 36px 5px rgba(166,124,82,1); */
+    text-align: center;
+    margin: 20px;
 }
 
-/* subheaders blue */
 h2 {
-    font-family: "Monomaniac One", sans-serif;
+    font-family: "Mina", sans-serif;
     /* color: #1C4D63; */
     color: #f8f8f8;
+    font-size: 28px;
 }
 
+.bronze {
+    font-family: "Great Vibes", cursive; 
+    font-size: 52px;
+    text-align: center;
+    margin: 28px;
+}
+
+
+
 h3 {
-    font-family: "Monomaniac One", sans-serif;
+    font-family: "Mina", sans-serif;
     color: #1C4D63;
+    font-size: 24px;
     /* color: #fafafa; */
 }
 
@@ -52,9 +63,11 @@ h3 {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    width: 100vw;
     margin: 0;
     padding: 0;
+    background: linear-gradient(108deg, rgba(216,180,226,1) 8%, rgba(4,24,52,1) 39%);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -62,6 +75,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 /**
  * Styles for header
  */
@@ -71,6 +85,7 @@ body {
     width: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .header-box {
@@ -79,16 +94,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-
-/* profile picture */
-.profile-picture {
-    background-image: url(images/Sofia_color_bw.png);
-    background-repeat: none;
-    background-size: cover;
-    height: 350px;
-    width: 350px;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 /* nav behavior */
@@ -122,6 +128,7 @@ main {
 
 .sectionbox {
     width: auto;
+    max-width: 1050px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -153,7 +160,7 @@ main {
 }
 
 .height {
-    height: 650px;
+    height: 670px;
 }
 
 .low {
@@ -195,17 +202,35 @@ footer {
 /* Styles to mobile device, screen max 767px */
 @media (max-width: 767px) {
     main {
+        width: 90vw;
         gap: 20px;
     }
 
+
     h1 {
-        font-size: 3rem;
-        margin: 5px;
+        font-size: 50px;
+        margin: 10px;
     }
 
-    .profile-picture {
-        width: 200px;
-        height: 200px;
+    h2 {
+        font-size: 28px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .header-box {
+        padding-top: 10px;
+        align-items: center;
+        width: 100%;
+    }
+    #sofia {
+        width: 250px;
+        height: 250px;
         margin-top: 0px;
     }
 
@@ -215,7 +240,6 @@ footer {
     }
 
     main {
-        /* padding: 10px; */
         display: flex;
         justify-content: center;
     }
@@ -229,6 +253,11 @@ footer {
         width: 90%;
     }
 
+    .sectionbox {
+        max-width: 550px;
+        padding: 15px;
+    }
+
     .project-box {
         width: 260px;
         align-items: center;
@@ -240,10 +269,24 @@ footer {
 
     .wrap {
         width: 100%;
+        max-width: 510px;
         align-items: center;
     }
 
     .height {
         height: auto;
     }
+}
+
+@media (max-width: 1200px) {
+    .wrap {
+        width: 100%;
+        max-width: 1100px;
+        align-items: center;
+    }
+
+    .height {
+        height: auto;
+    }
+
 }
