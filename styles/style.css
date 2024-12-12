@@ -83,7 +83,7 @@ body {
 
 /* profile picture */
 .profile-picture {
-    background-image: url(/images/Sofia_color_bw.png);
+    background-image: url(images/Sofia_color_bw.png);
     background-repeat: none;
     background-size: cover;
     height: 350px;
