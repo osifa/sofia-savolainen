@@ -24,7 +24,7 @@ html {
     margin: 0;
     padding: 0;
     background: linear-gradient(108deg, rgba(216,180,226,1) 8%, rgba(4,24,52,1) 39%);
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +192,7 @@ main {
 footer {
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding-bottom: 25px;
     width: 100vw;
 }
 
