@@ -33,20 +33,10 @@ html {
     z-index: 555;
 }
 
-/* .background {
-    background: linear-gradient(108deg, rgba(216,180,226,1) 8%, rgba(4,24,52,1) 39%);
-    width: 100vw;
-    height: 100vw;
-    z-index: 0;
-
-} */
-
-
 /**
  * Styles for fonts
  */
 
-/* Header bronze, font and size gonna be changed */
 h1 {
     font-family: "Great Vibes", cursive; 
     font-size: 80px;
@@ -60,7 +50,7 @@ h1 {
 h2 {
     font-family: "Mina", sans-serif;
     /* color: #1C4D63; */
-    color: #f8f8f8;
+    color: rgba(255, 255, 255, 0.9);;
     font-size: 28px;
 }
 
@@ -82,7 +72,7 @@ h3 {
 
 
 .white {
-    color: #fafafa;
+    color: rgba(255, 255, 255, 0.9);;
 }
 
 
@@ -162,7 +152,8 @@ main {
     width: 450px;   
     padding: 20px;
     border: 5px solid rgb(182, 154, 154);
-    background: white;
+    /* background: white; */
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 16px;
     box-shadow: -3px 10px 86px -47px rgba(163,80,163,0.74);
 }
@@ -202,7 +193,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    width: 100%;
+    width: 100vw;
 }
 
 
