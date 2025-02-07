@@ -22,7 +22,8 @@
                 
             </div>
             <div class="center header-box">
-                <img src="images/sofia_c2.png" width="350px" alt="Profiilikuva" id="sofia">
+                <!-- <img src="images/sofia_c2.png" width="350px" alt="Profiilikuva" id="sofia"> -->
+                <img src="images/osifa_tumma.png" width="350px" alt="Profiilikuva" id="sofia">
                 <h1>Sofia Savolainen</h1>
             </div>
             <div class="right header-box">
@@ -155,6 +156,8 @@
                                 <p>Sing! on ensimmäinen kokonaan itse tehty pieni sovellukseni. </p>
                                 <p>Se on seurapeli, jossa lausutaan ja lauletaan tuttujen suomalaisten laulajien lauluja. </p>
                                 <p>Tämä koodattu valmistujaisjuhlieni ohjelmanumeroksi. Itselläni versiot pädillä sekä puhelimella. </p>
+                                <p>Jakaisin mielelläni koodin gitissä, ja esittelisin toiminnot, mutta koska minulla ei ole oikeuksia käyttää laulujen sanoja, en voi sitä tehdä. </p>
+
                                 <p>Design ja koodi Sofia Savolainen</p>
                                 <img width="30" height="30" src="https://img.icons8.com/color/48/figma--v1.png" alt="figma--v1"/>
                                 <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/adobe-logo.png" alt="adobe-logo"/>
@@ -166,16 +169,36 @@
                                 <img width="30" height="30" src="https://img.icons8.com/nolan/64/angularjs.png" alt="angularjs"/>
                                 <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/external-ionic-a-complete-open-source-sdk-for-hybrid-mobile-app-development-logo-shadow-tal-revivo.png" alt="external-ionic-a-complete-open-source-sdk-for-hybrid-mobile-app-development-logo-shadow-tal-revivo"/>
                                 <img width="30" height="30" src="https://img.icons8.com/nolan/64/android-studio--v2.png" alt="android-studio--v2"/>
-                                <button>Linkki tulossa</button>
                             </div>
                             <div class="right-side">
                                 <div class="project-picture" id="sing">
                                     <img src="images/sing.png" alt="Sing! -pelikuva" width="201">
+
+                                    <button class="open-btn" onclick="document.getElementById('singD').showModal();">Lisätietoja</button>
+
+                                    <dialog id="singD">
+                                    <div class="popup-content">
+                                        <button onclick="document.getElementById('singD').close();">&times;</button>
+                                        <p>Sing!</p>
+                                        <p>Sing! -idea jäi mieleeni Ruotsissa pelaamastani Sing sing-pelistä ( https://www.ninjaprint.se/en/boardgames/sing-sing ), josta kaipasin Suomen kielistä versiota. Kaipasin myös itselleni sovellusprojektia ja päätin tehdä valmistujaisjuhlieni ohjelmanumeroksi kyseisen sovelluksen. Tein hieman sääntömuutoksia, vaikka tässä versiossa (ei ainakaan vielä) ei ole pisteidenlaskua, tärkeintä on pitää hauskaa! Aikaa ei ollut paljoa, joten design hahmottui aika pikaisesti, sekä kuvien piirtäminen. </p>
+                                        <p>Peli on koe-pelattu pariin kertaan, ja se jäi vieraiden mieliin.</p>
+                                        <p>Peli sisältää tällä hetkellä 150 Suomalaista enemmän ja vähemmän tuttua laulua monelta eri vuosikymmeneltä. Suunnitelmissa on tehdä myös versio englannin kielisistä sekä rock -biiseistä. </p>
+                                        <p>Alta löydät esittelyvideon pelistä, tekijänoikeusasioiden takia video on epäselvä ja vain nyt omaan käyttöön, enkä voi koodiakaan laittaa siksi julkiseksi.</p>
+                                        <p>Esittelen mielelläni koodit sekä sovelluksen, kun tavataan! </p>
+                                        <video width="500" height="550" controls>
+                                            <source src="images/sing_video.mp4" type="video/mp4">
+                                            Selaimesi ei tue videotoistoa.
+                                        </video>
+                                    </div>
+                                    </dialog>
+
                                 </div>
                             </div>
                         </div>
+                      
                     </div>
-                     <!-- Joulukalenteri project -->
+
+                     <!-- Viikkolukujärjestys project -->
                     <div class="project"> 
                         <h3 class="white">Viikkolukujärjestys</h3>
                         <div class="project-box to-row low">
@@ -190,11 +213,21 @@
                                 <img width="30" height="30" src="https://img.icons8.com/fluency/48/typescript--v2.png" alt="typescript--v2"/>
                                 <img width="30" height="30" src="https://img.icons8.com/nolan/64/html.png" alt="html"/>
                                 <img width="30" height="30" src="https://img.icons8.com/nolan/64/css3.png" alt="css3"/>                                   
-                                <button>Linkki tulossa</button>
                             </div>
                             <div class="right-side">
                                 <div class="project-picture" id="Viikkolukkari">
                                     <img src="images/viikkis.png" alt="Viikkokalenteri" width="201">
+
+                                    <button class="open-btn" onclick="document.getElementById('viikkis').showModal();">Lisätietoja</button>
+
+                                    <dialog id="viikkis">
+                                    <div class="popup-content">
+                                        <button onclick="document.getElementById('viikkis').close();">&times;</button>
+                                        <p>Viikkis</p>
+                                     
+                                    </div>
+                                    </dialog>
+
                                 </div>
                             </div>
                         </div> 
@@ -237,7 +270,7 @@
                                 <video width="200" height="250" controls>
                                     <source src="images/blendergirl.mp4" type="video/mp4">
                                     Selaimesi ei tue videotoistoa.
-                                    </video>
+                                </video>
                             </div>
                         </div> 
                     </div>
@@ -296,9 +329,9 @@
                 <h2>Ota yhteyttä</h2>
                     <div class="project-box wide">
                         <!-- <iframe src="https://forms.gle/7h2vHpXeaJ5KZQRh7" width="100%" height="500" style="border:0;"></iframe> -->
-                        <h3>Lomake</h3>
-                        <p>Tulossa</p>
-                        <h3>Muut yhteydenottotavat</h3>
+                        <!-- <h3>Lomake</h3>
+                        <p>Tulossa</p> -->
+                        <h3>Yhteydenottotavat</h3>
                         <p>Sähköposti: sofiashsavolainen@gmail.com</p>
                         <p>GitHub:
                             <a href="https://github.com/osifa" target="_blank" rel="noopener noreferrer">osifa</a>  </p>

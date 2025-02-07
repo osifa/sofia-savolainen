@@ -158,6 +158,8 @@ main {
     box-shadow: -3px 10px 86px -47px rgba(163,80,163,0.74);
 }
 
+
+
 .wide {
     width: 750px;
 }
@@ -184,7 +186,19 @@ main {
     margin: 10px;
 }
 
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 70%;
+    width: 70%;
+}
 
+video {
+    height: 250px;
+    width: 200px;
+}
 
 /**
  * Styles for footer
@@ -264,6 +278,11 @@ footer {
     .project-box {
         width: 260px;
         align-items: center;
+    }
+
+    dialog {
+        width: 80%;
+        height: 80%;
     }
 
     .low {
