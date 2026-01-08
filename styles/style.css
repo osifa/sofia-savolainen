@@ -52,7 +52,6 @@ h1 {
 
 h2 {
     font-family: "Mina", sans-serif;
-    /* color: #1C4D63; */
     color: rgba(255, 255, 255, 0.9);;
     font-size: 42px;
     text-align: center;
@@ -73,7 +72,13 @@ h3 {
     color: #1C4D63;
     font-size: 24px;
     text-align: center;
-    /* color: #fafafa; */
+    padding-top: 20px;
+    margin: 0;
+}
+
+.sizeup {
+    font-size: 32px;
+    margin: 0;
 }
 
 .rosegold {
@@ -95,6 +100,7 @@ h3 {
 .white {
     color: rgba(255, 255, 255, 0.9);;
 }
+
 
 
 
@@ -165,6 +171,10 @@ main {
     max-width: 1100px;
 }
 
+.work { 
+    gap: 30px;
+    padding: 20px;
+}
 /**
  * Styles for projects
  */
@@ -180,6 +190,9 @@ main {
     box-shadow: -3px 10px 86px -47px rgba(163,80,163,0.74);
 }
 
+.popup {
+    border: red solid 5px;
+}
 
 
 .wide {
@@ -187,11 +200,11 @@ main {
 }
 
 .height {
-    height: 670px;
+    height: 770px;
 }
 
 .low {
-    height: 400px;
+    height: 450px;
 }
 
 .wrap {
